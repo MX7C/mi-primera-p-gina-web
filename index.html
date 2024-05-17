@@ -3,39 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Academia Online</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS para estilos -->
+    <title>Venta de Cursos, Programas y Libros</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/originals/b0/1b/44/b01b4458d8986d99057b5d3d5cb7db11.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            background-color: rgba(0, 123, 255, 0.7);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+
+        /* Estilos para el logo */
+        .logo {
+            width: 80px;
+            height: auto;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .logo:hover {
+            transform: rotate(360deg);
+        }
+
+        /* Estilos para las secciones */
+        section {
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+        }
+
+        section h2 {
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #007bff;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+
+        .curso, .programa, .libro {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .curso:hover, .programa:hover, .libro:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .curso h3, .programa h3, .libro h3 {
+            margin-top: 0;
+            color: #007bff;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .curso p, .programa p, .libro p {
+            color: #333;
+            text-align: justify;
+        }
+
+        .curso a, .programa a, .libro a {
+            display: block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            text-align: center;
+            margin: 20px auto 0;
+            width: 150px;
+        }
+
+        .curso a:hover, .programa a:hover, .libro a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: rgba(0, 123, 255, 0.7);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Encabezado -->
     <header>
-        <h1>Tu Academia Online</h1>
+        <img src="C:\Users\migue\Downloads\programasgrowth.jpg" alt="Logo de Mi Empresa" class="logo">
+        <h1>Venta de Cursos, Programas y Libros</h1>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#programas">Programas</a></li>
+                <li><a href="#libros">Libros</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="inicio">
-        <h2>Bienvenido a Tu Academia Online</h2>
-        <p>¡Descubre nuestros cursos y programas educativos!</p>
-        <a href="#cursos" class="btn">Explorar Cursos</a>
-    </section>
-
+    <!-- Sección de Cursos -->
     <section id="cursos">
-        <h2>Nuestros Cursos</h2>
-        <!-- Aquí iría la lista de cursos -->
+        <h2>Cursos</h2>
+        <div class="curso">
+            <h3><a href="#curso1">Curso de Desarrollo Web</a></h3>
+            <p>Descripción del curso de desarrollo web.</p>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="curso">
+            <h3><a href="#curso2">Curso de Diseño Gráfico</a></h3>
+            <p>Descripción del curso de diseño gráfico.</p>
+            <a href="#">Comprar</a>
+        </div>
     </section>
 
+    <!-- Sección de Programas -->
+    <section id="programas">
+        <h2>Programas</h2>
+        <div class="programa">
+            <h3><a href="#programa1">Programa de Edición de Video</a></h3>
+            <p>Descripción del programa de edición de video.</p>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="programa">
+            <h3><a href="#programa2">Programa de Diseño 3D</a></h3>
+            <p>Descripción del programa de diseño 3D.</p>
+            <a href="#">Comprar</a>
+        </div>
+    </section>
+
+    <!-- Sección de Libros -->
+    <section id="libros">
+        <h2>Libros</h2>
+        <div class="libro">
+            <h3><a href="#libro1">Libro de HTML y CSS</a></h3>
+            <p>Descripción del libro de HTML y CSS.</p>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="libro">
+            <h3><a href="#libro2">Libro de JavaScript</a></h3>
+            <p>Descripción del libro de JavaScript.</p>
+            <a href="#">Comprar</a>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
     <section id="contacto">
         <h2>Contacto</h2>
-        <!-- Formulario de contacto -->
+        <p>Puedes contactarnos a través de:</p>
+        <ul>
+            <li>Email: ejemplo@email.com</li>
+            <li>Teléfono: 123456789</li>
+            <li>Redes Sociales: <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a href="#">LinkedIn</a>, etc.</li>
+        </ul>
     </section>
 
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Tu Academia Online. Todos los derechos reservados.</p>
+        <p>Derechos de Autor &copy; 2024 | Venta de Cursos, Programas y Libros</p>
     </footer>
+
 </body>
 </html>
